@@ -114,8 +114,8 @@ q{
 
     justify-content: center;
 }
-
-@media screen and (max-width: 1000px){
+/* Tablet Responseiveness */
+@media screen and (max-width: 1100px) and (min-width: 699px){
 
     .daniel{
         grid-row-start: 1;
@@ -150,7 +150,26 @@ q{
         grid-column-start: 1;
         grid-column-end: 3;
     }
+}
 
+@media screen and (max-width: 700px){
+    .grid-container{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
 
+        margin: 0px;
+        margin: 35px;
+    }
+
+    .daniel, .johnathan, .jeanette, .patrick, .kira{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-radius: 10px;
+    }
+
+    .kira > h1{
+        
+    }
 
 }
