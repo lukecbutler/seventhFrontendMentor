@@ -153,23 +153,13 @@ q{
 }
 
 @media screen and (max-width: 700px){
-    .grid-container{
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 1fr;
-
-        margin: 0px;
+    .grid-container {
+        display: flex;
+        flex-direction: column;
         margin: 35px;
     }
 
-    .daniel, .johnathan, .jeanette, .patrick, .kira{
-        grid-column-start: 1;
-        grid-column-end: 3;
-        border-radius: 10px;
+    .daniel h1, .johnathan h1, .jeanette h1, .patrick h1, .kira h1{
+        align-self: flex-start;
     }
-
-    .kira > h1{
-        
-    }
-
 }
